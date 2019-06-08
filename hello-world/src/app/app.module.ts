@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HelloComponent } from './app.component';
+import { FooterSectionComponent } from './footer/footer-sec.componet';
+import { HeaderSectionComponent } from './header/header-sec.component';
+import { SideNavComponent } from './sidenav/side-nav.component';
+import { ContentSectionComponent } from './contentsec/content-sec.component';
+import { HomeComponent } from './app.component';
 
 @NgModule({
-    declarations: [HelloComponent],
+    declarations: [HomeComponent,HeaderSectionComponent,SideNavComponent,ContentSectionComponent,FooterSectionComponent],
     imports: [ BrowserModule ],
-    exports: [],
-    providers: [],
-    bootstrap: [HelloComponent]
+    bootstrap:[HomeComponent]
+    
 })
 export class AppModule {}
