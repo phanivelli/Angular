@@ -1,0 +1,25 @@
+<div class="col-md-6">
+    <h2 class="text-center">Edit User</h2>
+    <!-- <form *ngIf="editForm" [formGroup]="editForm" (ngSubmit)="onSubmit()"> -->
+      <form  [formGroup]="editForm" (ngSubmit)="onSubmit()">
+          <!-- <div class="hidden">
+              <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+            </div> -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input formControlName="name" placeholder="Full Name" name="name" class="form-control" id="name">
+          </div>
+
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" formControlName="email" placeholder="Email" name="email" class="form-control" id="email">
+      </div>
+  
+      <div class="form-group">
+        <label for="mobile">Mobile No:</label>
+        <input formControlName="mobile" placeholder="Mobile Number" name="mobile" class="form-control" id="mobile">
+      </div>
+  
+      <button class="btn btn-success">Update</button>
+    </form>
+  </div>

@@ -1,0 +1,26 @@
+.sidenavbar{
+    min-height: 800px;
+    background: #333333;
+    position: fixed;
+    top: 70px;
+    left: 8px;
+    width: 225px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+ul li{
+    padding: 8px;
+   border-bottom: 1px solid gray; 
+}
+ ul li a{
+    text-decoration: none;
+    color: white;
+    }
+ ul li:hover{
+    background: grey;
+}
